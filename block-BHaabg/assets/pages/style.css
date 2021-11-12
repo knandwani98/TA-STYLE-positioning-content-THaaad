@@ -42,8 +42,10 @@ body{
 
 header {
     font-size: 0;
-    padding: 0 40px;
     background-color: silver;
+    position: fixed;
+    top: 10px;
+    width: 100%;
 }
 .brand img {
     width: 120px;
@@ -58,7 +60,7 @@ header {
 }
 .menu a {
     font-size: 15px;
-    padding: 0 20px;
+    padding: 10px 20px;
     text-transform: uppercase;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
@@ -67,16 +69,15 @@ header {
     letter-spacing: 2px;
 }
 .menu a:hover {
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 
 /* main */
-
+main {
+    padding-top: 100px;
+}
 main, h1, h2, p, .a, .b, .col {
     margin: 2%;
-}
-article {
-    font-size: 0px;
 }
 h1 {
     font-size: 32px;
@@ -114,13 +115,15 @@ p {
 .col {
     width: 29.33%;
     float: left;
-    margin-bottom: 40px;
 }
 section img {
     width: 100%;
     height: 350px;
     object-fit: cover;
     border-radius: 10px;
+}
+.gallery{
+    background-color: black;
 }
 .middle {
     text-align: center;
@@ -129,13 +132,13 @@ section img {
     position: fixed;
     bottom: 10px;
     float: right;
-    right: 15%;
-    left: 85%;
+    right: 13.5%;
+    left: 86.5%;
     max-width: 40px;
     width: 100%;
     z-index: 1;
     background-color: silver;
-    border-radius: 10px;
+    border-radius: 50%;
     cursor: pointer;
     border: none;
     outline: none;
@@ -151,4 +154,18 @@ section img {
 }
 #btn a:hover {
     color: silver;
+}
+.footer {
+    background-color: silver;
+    padding: 10px;
+    text-align: center;
+}
+.footer a {
+    color: black;
+    margin: 0 10px;
+    font-size: 20px;
+}
+.footer a:hover {
+    color: white;
+    text-shadow: 0 0 8px black;
 }
