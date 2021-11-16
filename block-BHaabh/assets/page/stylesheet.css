@@ -1,0 +1,180 @@
+/*
+*  html5resetcss
+*/
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent}
+ins{background-color:#ff9;color:#000;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+
+/* Custom Styling */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: 'Raleway', sans-serif;
+}
+.clearfix::before, .clearfix::after{
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;    
+}
+.container{
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.bgblue {
+    background-color: #2596be;
+    color: white;
+}
+
+
+/* Header */
+
+.header {
+    padding-top: 40px;
+}
+.header a {
+    text-decoration: none;
+    color: white;
+    margin: 0 20px;
+    padding: 20px 0;
+}
+
+/* Both Sides of Header */
+
+.logo, .nav {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* Header Left Side */
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Header Right Side */
+
+.nav {
+    text-align: right;
+    width: calc(100% - 120px);
+}
+
+
+/* Sections */
+
+.heading {
+    padding: 100px 0;
+    text-align: center;
+    padding-bottom: 150px;
+}
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+p {
+    margin: 5px 0;
+}
+/*sec 1 */
+.col {
+    float: left;
+    margin: 3%;
+    line-height: 1.8;
+}
+.sec1 .col {
+    width: 27.33%;
+}
+h2 {
+    font-size: 22px;
+    color: #2596be;
+    font-weight: 500;
+    line-height: 1.5;
+}
+span {
+    width: 10px;
+    height: 5px;
+    background-color: #2596be;
+    padding: 10px 20px;
+    border-radius: 2px;
+}
+span a {
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.sec2 .col {
+    width: 22%;
+    float: left;
+    margin: 1.5%;
+    text-align: center;
+    border: 1px solid white;
+}
+.sec2 , .sec3 {
+    text-align: center;
+}
+.sec1, .sec2, .sec3 {
+    padding: 80px 0;
+}
+.sec2 .col img {
+    border-radius: 50%;
+    padding: 30px 0;
+}
+.sec2 .col h2 {
+    color: white;
+}
+.sec1 p{
+    padding: 10px 0 25px 0;
+}
+.sec2 p, .sec3 p {
+    margin-bottom: 60px;
+}
+
+/*sec3*/
+
+.sec3 .col{
+    width: 44%;
+    text-align: left;
+}
+.sec3 img {
+    max-width: 100%;
+}
+.sec3 h2 {
+    padding: 20px 0;
+}
+footer {
+    padding: 20px 0;
+}
+aside, section {
+    float: left;
+}
+aside {
+    width:40%;
+}
+section {
+    width: 60%;
+    text-align: right;
+}
+section a {
+    color: #2596be;
+    margin: 0 5px;
+    font-size: 20px;
+}
